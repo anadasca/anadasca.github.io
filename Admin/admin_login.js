@@ -12,7 +12,7 @@ function checkForm() {
     }
     
     var obj = {
-      password: password,
+      password: password
      
     };
     var data = JSON.stringify(obj);

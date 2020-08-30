@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NTR - Take Test</title>
+
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- my css file-->
+    <link rel="stylesheet" href="take_test_css.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--my script-->
+    <script src="take_test.js"></script>
+  </head>
+  <body>
+    <div id="e_background">
+      <div id="e_smallstars"></div>
+      <div id="e_moon"></div>
+    </div>
+    <button type="button" class="my_button">
+      <a href="Tests.html" class="my_a">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        Back to tests!
+      </a>
+    </button>
+    <section class="create-block">
+      <div class="container" id="test">
+        <div class="row">
+          <p id="title">Test</p>
+          <p id="name"></p>
+          <p id="desc"></p>
+        </div>
+        <div class="row" id="questions"></div>
+
+        <div class="row">
+          <button type="button" class="my_button" onclick="send()">
+            <a href="#" class="my_a" onclick="start()">
+              Send!
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

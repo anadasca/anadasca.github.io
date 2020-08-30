@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NTR- Tests</title>
+
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- my css file-->
+    <link rel="stylesheet" href="test_css.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--My script-->
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="..\Images\Logo.jpg" />
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="menu_btn">
+            <a class="link" href="../Home/HomeLogin.html">Home</a>
+          </li>
+          <li class="menu_btn" >
+            <a class="link" href="../Theory/Theories.html">Theories</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../What_If/What_ifs.html">What-ifs</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../Question/Questions.html">Questions</a>
+          </li>
+          <li class="menu_btn" id="selected">
+            <a class="link" href="../Test/Tests.html">Tests</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../Ranks/Ranks.html">Ranks</a>
+          </li>
+        
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active" >
+            <div class="dropdown">
+              <button
+                class="btn btn-default dropdown-toggle"
+                type="button"
+                id="my_button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                <span class="glyphicon glyphicon-user"></span>
+                User
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../Profile/Profile.html" id="my_a_p">
+                    <span class="glyphicon glyphicon-home"></span>
+                    My profile
+                  </a>
+                </li>
+                <li>
+                  <a href="../Profile/Settings.html" id="my_a_s">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onclick="logout()" id="my_a_l">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                    Log-out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="e_background">
+      <div id="e_smallstars"></div>
+      <div id="e_moon"></div>
+    </div>
+
+    <div class="col-sm-12" id="center">
+      <div class="row" id="my_center">
+        <div class="col-sm-11">
+          <!-- new row -->
+          <div class="row">
+            <!-- small column inside the row to contain input element for alignment purpose -->
+            <div class="col-sm-4">
+              <input
+                type="text"
+                id="tag"
+                list="menu_category"
+                placeholder="Type or select a category"
+              />
+             
+              <!-- datalist tag specifies a list of pre-defined options for tag input -->
+              <datalist id="menu_category">
+                <option value="All theories"></option>
+                <option value="Star wars"></option>
+                <option value="Avengers"></option>
+                <option value="Marvel"></option>
+                <option value="Disney"></option>
+                <option value="Princesses"></option>
+                <option value="Pixar"></option>
+                <option value="Videogames"></option>
+              </datalist>
+              
+            </div>
+            <!-- small column inside the row to contain button element for alignment purpose -->
+            <div class="col-sm-1">
+
+             
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" id="search_btn" onclick="SearchByTag()">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </span>
+            </div>
+           
+
+            <div class="col-sm-3">
+              <button type="button" class="my_button2" id="btn3" onclick="create()">
+                <a  class="my_a2">
+                  Create a new test!
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- end row -->
+          <!-- hide paragraph for control message in case of error -->
+          <p id="search_tag_name_msg"></p>
+        </div>
+      </div>
+      <br />
+      <!--codice my nights qui-->
+      <div id="posts"></div>
+      <p id="message"></p>
+      <div id="tags"></div>
+    
+    </div>
+  </body>
+</html>

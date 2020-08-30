@@ -1,0 +1,312 @@
+#my_button2 {
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: #ffb780;
+  width: 300px;
+  border: none;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline-color: #ffb780;
+  font-size: large;
+  font-family: "Poppins";
+  margin-top: 10px;
+  padding: 15px 32px;
+  margin-bottom: 20px;
+}
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url("../star_jedi/starjout/Starjout.ttf");
+}
+
+#my_button2 a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  outline-color: #ffb780;
+  color: black;
+}
+
+#my_button2 a:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+  outline-color: #ffb780;
+  color: white;
+}
+
+#my_button2:hover a {
+  padding-right: 25px;
+  outline-color: #ffb780;
+  color: white;
+}
+
+#my_button:hover,
+#my_a2:hover {
+  color: white;
+}
+
+.create-block {
+  padding: 50px 0;
+  margin-left: auto;
+}
+
+.container {
+  background-image: linear-gradient(#f2e8c4, #a18b80, #b0b0b0);
+  border-radius: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: justify;
+}
+
+.btn-login {
+  border-radius: 10px;
+  background-color: #ffb780;
+  width: 180px;
+  border: none;
+  color: White;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline-color: #ffb780;
+}
+
+.btn-login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-login span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:hover span {
+  padding-right: 25px;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:hover span:after {
+  opacity: 1;
+  right: 0;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:disabled {
+  border: 2px solid #ffb780;
+  opacity: 30%;
+  cursor: not-allowed;
+  background-color: #ffb780;
+
+  color: white;
+}
+#new_topic{
+    width: 200px;
+    height: 50px;
+    font-weight: 200;
+    font-size: 15px;;
+}
+#post_title{
+    width: 200px;
+}
+.btn-login:disabled span {
+  cursor: not-allowed;
+}
+.btn-login:disabled span:after {
+  content: "";
+}
+
+.btn-login:hover:disabled span {
+  padding-right: 0px;
+}
+textarea{
+    border-radius: 5px;
+}
+
+select.custom {
+  min-height: 30px;
+  min-width: 100px;
+  border-radius: 5px;
+}
+option.values {
+  color: black;
+}
+
+#description{
+    width: 500px;
+    height: 100px;
+}
+.title{
+    
+        font-family:Poppins;
+        text-shadow: 1.2px 1.2px #ffb780;
+       
+        font-weight: 800;
+      
+        color: White;
+   
+}
+#title{
+    font-family: myFirstFont;
+    text-shadow: 1.2px 1.2px #ffb780;
+  
+    font-weight: 800;
+    font-size: xx-large;
+    color: White;
+}
+/*sfondo*/
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 600px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+
+body {
+  position: relative;
+}
+#e_background {
+  background: #000 url("../Images/sky.jpg") repeat 5% 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  -webkit-animation: stars-anim 600s infinite linear;
+  -moz-animation: stars-anim 600s infinite linear;
+  -o-animation: stars-anim 600s infinite linear;
+  animation: stars-anim 600s infinite linear;
+}
+
+@-webkit-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-moz-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-o-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-webkit-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

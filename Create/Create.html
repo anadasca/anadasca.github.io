@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NTR - Create</title>
+
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- my css file-->
+    <link rel="stylesheet" href="create_css.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--My script-->
+    <script src="create.js"></script>
+  </head>
+
+  <body>
+    <!-- container background moon -->
+    <div id="e_background">
+      <div id="e_smallstars"></div>
+      <div id="e_moon"></div>
+    </div>
+
+    <button type="button" id="my_button2" onclick="back_to()">
+      <a href="#" id="my_a2">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        Back to posts!
+      </a>
+    </button>
+
+    <!-- new section-->
+    <section class="create-block">
+      <!-- container of rows -->
+      <div class="container">
+        <div class="row">
+          <h1 id="title">Create your post!</h1>
+        </div>
+        <div class="row">
+            <h3 class="title">Add a Title:</h3>
+          </div>
+          <div class="row">
+            <!-- text area for description -->
+            <textarea
+              rows="1"
+              maxlength="100"
+              id="post_title"
+              placeholder="Write your title here"
+            ></textarea>
+          </div>
+        <div class="row">
+          <h3 class="title">Select a topic:</h3>
+        </div>
+        <div class="row" id="custom_select">
+           
+               
+         
+          <select name="topics" id="topics" class="custom">
+            <option disabled="disabled" selected="selected">select a topic</option>
+            <option value="Star wars" class="values" >Star wars</option>
+            <option value="Avengers" class="values">Avengers</option>
+            <option value="Marvel" class="values">Marvel</option>
+            <option value="Disney" class="values">Disney</option>
+            <option value="Princesses" class="values">Princesses</option>
+            <option value="Pixar" class="values">Pixar</option>
+            <option value="Videogames" class="values">Videogames</option>
+          </select>
+           
+          
+        </div>
+        <br>
+       
+        <div class="row" id="create_topic">
+            <h4 class="title">Or create a new one </h4>
+            <h6 style = "color: white">Topics names cannot contain spaces</h6>
+          <textarea
+            rows="1"
+            maxlength="180"
+            id="new_topic"
+            placeholder="Write you own topic"
+          ></textarea>
+          <br />
+          <button class="btn-login" id="new_topic" onclick="create_topic()"><span>Create a new topic! </span></button>
+        </div>
+
+        <div class="row">
+          <h3 class="title">Add a description:</h3>
+        </div>
+        <div class="row">
+          <!-- text area for description -->
+          <textarea
+            rows="4"
+            maxlength="600"
+            id="description"
+            placeholder="Write a description here..."
+          ></textarea>
+        </div>
+        <div class="row">
+          <!-- button to save Category & Description and to go to Recap -->
+          <button class="button btn-login" id="btn_span" onclick="create()">
+            <span>Create!</span>
+          </button>
+        </div>
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end section -->
+  </body>
+</html>

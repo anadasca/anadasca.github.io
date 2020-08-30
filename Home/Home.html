@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NTR - Home</title>
+
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- my css file-->
+    <link rel="stylesheet" href="home_css.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="home.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="..\Images\Logo.jpg" />
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="selected"><a href="Home.html" class = "link" id="my_home">Home</a></li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="menu_btn">
+            <a href="..\Sign_up\Sign_up.html" class = "link" id="my_sign_up"
+              ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+            >
+          </li>
+          <li class="menu_btn">
+            <a href="..\Sign_in\Sign_in.html" class = "link" id="my_sign_in"
+              ><span class="glyphicon glyphicon-log-in"></span> Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="e_background">
+      <div id="e_smallstars"></div>
+      <div id="e_moon"></div>
+    </div>
+
+    <div class="container" id="welcome_container">
+      <div>
+        <p id="welcome_msg">
+          <b>Welcome!</b>
+        </p>
+
+        <p id="welcome_desc">
+          Welcome to Nerd Theories Ranker, a land of hypotesis and
+          possibilities, where the thin line between a solid truth and a blatant
+          lie is determined by your upvote and your participation in the
+          community. Share your thoughts, defend your arguments and rank as #1
+          expert in every field of nerd knowledge!
+          <a href="..\Sign_up\Sign_up.html" id="sign_up_desc">Sign up now</a> if you want to be a part
+          of our community or click the button below if you just want to visit
+          our app!
+        </p>
+        <br />
+        <div id="btn_div">
+          <button type="button" class="btn" id="visitor_btn" onclick="no_login()">
+            <a href="#" id="btn_ref">
+              <span> Visit!</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

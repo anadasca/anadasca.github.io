@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NTR- Ranks</title>
+
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- my css file-->
+    <link rel="stylesheet" href="ranks_css.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--My script-->
+    <script src="ranks.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse" id="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="..\Images\Logo.jpg" />
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="menu_btn">
+            <a class="link" href="../Home/HomeLogin.html">Home</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../Theory/Theories.html">Theories</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../What_If/What_ifs.html">What-ifs</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../Questions/Questions.html">Questions</a>
+          </li>
+          <li class="menu_btn">
+            <a class="link" href="../Test/Tests.html">Tests</a>
+          </li>
+          <li class="menu_btn" id="selected">
+            <a class="link" href="../Ranks/Ranks.html">Ranks</a>
+          </li>
+         
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="dropdown">
+              <button
+                class="btn btn-default dropdown-toggle"
+                type="button"
+                id="my_button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                <span class="glyphicon glyphicon-user"></span>
+                User
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="../Profile/Profile.html" id="my_a_p">
+                    <span class="glyphicon glyphicon-home"></span>
+                    My profile
+                  </a>
+                </li>
+                <li>
+                  <a href="../Profile/Settings.html" id="my_a_s">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onclick="logout()" id="my_a_l">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                    Log-out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="e_background">
+      <div id="e_smallstars"></div>
+      <div id="e_moon"></div>
+    </div>
+    <div id="center">
+    <div class="col-sm-12 text-left" id="my_center">
+      <button class="btn-login" onclick="theories_rank()" id="theory"><span>See theories' leaderboard</span></button>
+      <button class="btn-login" onclick="questions_rank()" id="question"><span>See questions' leaderboard</span></button>
+      <button class="btn-login" onclick="what_ifs_rank()" id="what_if"><span>See what_ifs' leaderboard</span></button>
+      <button class="btn-login" onclick="users_rank()" id="user_button"><span>See users' leaderboard</span></button>
+      <button class="btn-login" onclick="topics_rank()" id="topic"><span>See topic's leaderboard</span></button>
+    </div>
+    <br>
+    <div id="my_rank"></div>
+    <div id="theory_ranks"></div>
+    <div id="what_ifs_ranks"></div>
+    <div id="questions_ranks"></div>
+    <div id="user_ranks"></div>
+    <div id="topic_ranks"></div>
+</div>
+  </body>
+</html>

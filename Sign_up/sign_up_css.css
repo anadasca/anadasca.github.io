@@ -1,0 +1,328 @@
+body {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../star_jedi/starjout/Starjout.ttf");
+}
+
+
+#navbar {
+  background-color:white; 
+  
+  border-color: white;
+  font-size: large;
+  margin: 0px;
+  color: black;
+}
+img {
+  height: 50px;
+  width: 100px;
+  margin: 0px;
+}
+
+#my_sign_in,
+#my_sign_up,
+#my_home,
+#my_about_us {
+  color: black;
+}
+#my_sign_in:hover,
+#my_sign_up:hover,
+#my_home:hover,
+#my_about_us:hover {
+  color: white;
+}
+
+.menu_btn:hover,
+#selected {
+  outline-color: #ffb780;
+  background-color: #ffb780;
+  color: black;
+}
+.banner-sec {
+  background-image: url(https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif);
+  background-position: center;
+  background-size:cover; 
+  background-repeat: no-repeat;
+  min-height: 500px;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  margin-top: 150px;
+}
+
+#surname,
+#name,
+#email,
+#password,
+#password2,
+#username,
+#google_p {
+  color: black;
+  opacity: 1;
+}
+
+#passwordHelpBlock {
+  color: white;
+  opacity: 1;
+  font-size: small;
+}
+
+
+.login-block {
+  padding: 50px 0;
+  margin-left: auto;
+}
+
+input {
+  color: black;
+}
+
+.container {
+  background-image: linear-gradient(#F2E8C4, #a18b80, #b0b0b0);
+  border-radius: 10px;
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+.login-sec {
+  padding: 10px 30px; /* top-bottom & left-right*/
+  position: left;
+  color:white;
+}
+
+.login-sec h3 {
+  font-family: myFirstFont;
+  text-shadow: 1.2px 1.2px #ffb780;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: xx-large;
+  color: White;
+}
+
+.login-sec h3:after {
+  content: " ";
+  width: 100px;
+  height: 5px;
+  background:white;
+  display: block;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-login {
+  border-radius: 10px;
+  background-color: #ffb780;
+  width: 180px;
+  border: none;
+  color: White;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  outline-color:#ffb780;
+}
+
+.btn-login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.btn-login span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  outline-color:#ffb780;
+  color: white;
+}
+
+.btn-login:hover span {
+  padding-right: 25px;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:hover span:after {
+  opacity: 1;
+  right: 0;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:disabled {
+  border: 2px solid  #ffb780;
+  opacity: 30%;
+  cursor: not-allowed;
+  background-color: #ffb780;
+
+  color: white
+}
+
+.btn-login:disabled span {
+  cursor: not-allowed;
+}
+.btn-login:disabled span:after {
+  content: "";
+}
+
+.btn-login:hover:disabled span {
+  padding-right: 0px;
+}
+
+#password,
+#username {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+}
+
+#google_p, #github_p{
+  font-size: large;
+  color: white;
+}
+
+#google {
+  border: none;
+  background-image: url("../Images/btn_google_dark_normal_ios.jpg");
+  background-size: 40px;
+  height: 40px;
+  width: 220px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: white;
+  color: black;
+}
+#google_span {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+/*Background animation */
+
+body {
+  position: relative;
+}
+#e_background {
+  background: #000 url("../Images/sky.jpg") repeat 5% 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  -webkit-animation: stars-anim 600s infinite linear;
+  -moz-animation: stars-anim 600s infinite linear;
+  -o-animation: stars-anim 600s infinite linear;
+  animation: stars-anim 600s infinite linear;
+}
+
+
+@-webkit-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-moz-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-o-keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@keyframes stars-anim {
+  from {
+    background-position: 5% 600%;
+  }
+  to {
+    background-position: 1300% 5%;
+  }
+}
+@-webkit-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes light {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

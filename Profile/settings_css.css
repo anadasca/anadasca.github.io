@@ -1,0 +1,502 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: black;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url("../star_jedi/starjout/Starjout.ttf");
+  }
+  #settings{
+    font-family: myFirstFont;
+    text-shadow: 1.2px 1.2px #ffb780;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: xx-large;
+    color: White;
+  }
+  #navbar {
+    background-color: white;
+    border-color: white;
+    font-size: large;
+    margin: 0px;
+    color: black;
+  }
+  img {
+    height: 50px;
+    width: 100px;
+    margin: 0px;
+  
+  }
+  #my_img{
+      margin-top: 0px;
+      width: 180px;
+      height: auto;
+      margin-left:10px;
+      float: left;
+      border-radius: 5px;
+      }
+    
+    .spazio{
+        color:white;
+        text-decoration: none;
+        
+        
+      }
+    .spazio:hover{
+      text-decoration: none;
+      color:white;
+    }
+  #my_list_div{
+    border-radius: 5px;
+      margin-top: 30px;
+      margin-left:10px;
+      float:left;
+      font-size: medium;
+      background-color: white;
+      width: 180px;
+      height: auto;
+      text-decoration: none;
+      
+      text-align: start;
+      padding:10px;
+      }
+  #my_a_p, #my_a_s, #my_a_l {
+    font-family: "Poppins";
+    font-size: large;
+    text-decoration: none;
+    color:#9a9a9a;
+  }
+  #my_a_p:hover,  #my_a_s:hover, #my_a_l:hover {
+      background-color: #ffb780;
+      color: white;
+  
+  }
+  
+  #my_button {
+    background-color: #ffb780;
+    margin-top: 5px;
+    color: white;
+    border: none;
+    font-size: large;
+    font-family: "Poppins";
+  }
+  .link {
+    color: black;
+  }
+  .link:hover{
+    color: white;
+  }
+
+  #change_pswd, #delete_profile{
+    margin-left: 250px;
+    margin-top: 80px;
+    color: white;
+  }
+  .my_a, #my_a2, #my_a_pswd, #my_a_avatar{
+    font-family: 'Poppins';
+    font-size: large;
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+  }
+  .my_a:hover, #my_a2:hover{
+    color:white;
+    cursor: pointer;
+  }
+
+  #my_a_pswd:hover, #my_a_avatar:hover{
+    color:#ffb780;
+    cursor: pointer;
+  }
+  
+  
+.btn-login {
+  border-radius: 10px;
+  background-color: #ffb780;
+  width: 270px;
+  border: none;
+  color: White;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px;
+  outline-color:#ffb780;
+}
+
+.btn-login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.btn-login span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  outline-color:#ffb780;
+  color: white;
+}
+
+.btn-login:hover span {
+  padding-right: 25px;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:hover span:after {
+  opacity: 1;
+  right: 0;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.btn-login:disabled {
+  border: 2px solid  #ffb780;
+  opacity: 30%;
+  cursor: not-allowed;
+  background-color: #ffb780;
+
+  color: white
+}
+
+.btn-login:disabled span {
+  cursor: not-allowed;
+}
+.btn-login:disabled span:after {
+  content: "";
+}
+
+.btn-login:hover:disabled span {
+  padding-right: 0px;
+}
+    #delete{
+      border-radius: 10px;
+      background-color: red;
+      width: 300px;
+      border: none;
+      color: #424254;
+      text-align: center;
+      font-weight:600;
+      font-size: 20px;
+      padding: 10px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      font-size: large;
+      font-family: 'Poppins';
+      margin-top: 20px;
+      padding: 15px 32px;
+    
+      
+    }
+    
+    #delete #my_span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+     
+      
+    }
+    
+    #delete #my_span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+      color: white;
+    }
+    
+    #delete:hover #my_span {
+      padding-right: 25px;
+      color: white;
+     
+    }
+    
+    #delete:hover #my_span:after {
+      opacity: 1;
+      right: 0;
+      color: white;
+    }
+ 
+    .menu_btn:hover,
+    #selected {
+      outline-color: #ffb780;
+      background-color: #ffb780;
+      color: black;
+    } 
+  
+  #my_button{
+    margin-top: 10px;
+    background-color: #ffb780;
+    color: white;
+    border: none;
+    font-size: large;
+    font-family: 'Poppins' }
+
+    #my_a2{
+      color: #9999A3;
+    }
+
+    h1{
+      text-shadow: 1.2px 1.2px white;
+      color: rgb(153, 153, 153);
+      float: left;
+    }
+    
+    #my_list_div{
+        border-radius: 5px;
+          margin-top: 30px;
+          margin-left:10px;
+          float:left;
+          font-size: medium;
+          background-color: white;
+          width: 180px;
+          height: auto;
+          text-decoration: none;
+          
+          text-align: start;
+          padding:10px;
+          }
+    .label{
+      color:  #ffb780;
+      font-size: medium;
+    }
+    label{
+      color: black;
+    }
+    
+    .title{
+      
+      text-shadow: 1.2px 1.2px black;
+      margin-bottom:30px; 
+      font-weight:800; 
+      font-size:xx-large;
+      color: #ffb780;
+    }  
+  
+    #center{
+     color:  black;
+     background-color: white;
+      height: auto;
+      border-radius: 5px;
+    }
+    #change_avatar{
+      margin-top: 50px;
+      background-color: white;
+      border-color:white;
+      border-radius: 5px;
+      position: center absolute;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      border-radius: 5px;
+  }
+  
+  .my_button{
+    margin-left : 30px;
+    border-radius: 10px;
+    background-color:#ffb780;
+    width: 200px;
+    border: none;
+    color:White;
+    text-align: center;
+    font-weight:600;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    outline-color:#ffb780;
+    margin-top: 10px;
+
+   
+  }
+  
+  .my_button a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+  }
+
+.my_button:hover a {
+    padding-right: 25px;
+    outline-color:#424254;
+    color: white;
+   
+  }
+  .my_a:hover{
+    color: white;
+  }
+
+  #vernon, #petunia, #marge, #kowalski,#obi_wan, #ashoka, #luke, #leia, #b_widow, #ironman, #c_marvel, #b_panther, #neo, #daenerys, #hp, #rey, #vader, #elsa, #kratos, #mal {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 600px}
+      
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px; 
+       
+        height: 100%;
+      }
+      
+      
+      
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+  
+  
+      /*Background animation */
+  
+  
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 600px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  body {
+    position: relative;
+  }
+  #e_background {
+    background: #000 url("../Images/sky.jpg") repeat 5% 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    -webkit-animation: stars-anim 600s infinite linear;
+    -moz-animation: stars-anim 600s infinite linear;
+    -o-animation: stars-anim 600s infinite linear;
+    animation: stars-anim 600s infinite linear;
+  }
+  
+  @-webkit-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-moz-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-o-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-webkit-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-moz-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-o-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  

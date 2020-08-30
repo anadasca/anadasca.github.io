@@ -1,0 +1,191 @@
+/* Bordered form */
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:#ffb780;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    outline-color: #ffb780;
+    background-color:  #ffb780 ;
+    color:black; 
+    border-radius: 10px; 
+  }
+  
+ 
+  
+  /* Add padding to containers */
+  .container {
+      border-radius: 10px;
+      margin-top: 100px;
+    padding: 16px;
+    
+    width: 400px;
+    float: center;
+    text-align: center;
+    background-image: linear-gradient(#F2E8C4, #a18b80, #b0b0b0);;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+/*sfondo*/
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 600px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  body {
+    position: relative;
+  }
+  #e_background {
+    background: #000 url("../Images/sky.jpg") repeat 5% 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    -webkit-animation: stars-anim 600s infinite linear;
+    -moz-animation: stars-anim 600s infinite linear;
+    -o-animation: stars-anim 600s infinite linear;
+    animation: stars-anim 600s infinite linear;
+  }
+  
+  @-webkit-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-moz-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-o-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-webkit-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-moz-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-o-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  

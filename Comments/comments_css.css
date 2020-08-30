@@ -1,0 +1,484 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: black;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url("../star_jedi/starjout/Starjout.ttf");
+  }
+  #navbar {
+    background-color: white;
+    border-color: white;
+    font-size: large;
+    margin: 0px;
+    color: black;
+  }
+  
+  #my_comment{
+      height: 80px;
+      width: 950px;
+  }
+  .img-thumbnail{
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+  }
+  .upvoted {
+    color:  #ffb780;;
+    text-decoration: none;
+  }
+  .upvoted:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .spazio {
+    color: white;
+    text-decoration: none;
+  }
+  .spazio:hover {
+    text-decoration: none;
+    color: white;
+  }
+  #my_list_div {
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    font-size: medium;
+    background-color: white;
+    width: 180px;
+    height: auto;
+    text-decoration: none;
+  
+    text-align: start;
+    padding: 10px;
+  }
+  #my_a_p,
+  #my_a_s,
+  #my_a_l {
+    font-family: "Poppins";
+    font-size: large;
+    text-decoration: none;
+    color: #9a9a9a;
+  }
+  #my_a_p:hover,
+  #my_a_s:hover,
+  #my_a_l:hover {
+    background-color: #ffb780;
+    color: white;
+  }
+  
+  #my_button {
+    background-color: #ffb780;
+    margin-top: 5px;
+    color: white;
+    border: none;
+    font-size: large;
+    font-family: "Poppins";
+  }
+  .link {
+    color: black;
+  }
+  .link:hover {
+    color: white;
+  }
+  #my_what_ifs,
+  #my_tests,
+  #my_questions,
+  #my_theories,
+  #my_l_what_ifs,
+  #my_l_tests,
+  #my_l_questions,
+  #my_l_theories,
+  .div_title {
+    text-decoration: none;
+    cursor: pointer;
+    color: #9a9a9a;
+  }
+  #my_what_ifs:hover,
+  #my_tests:hover,
+  #my_questions:hover,
+  #my_theories:hover,
+  #my_l_what_ifs:hover,
+  #my_l_tests:hover,
+  #my_l_questions:hover,
+  #my_l_theories:hover {
+    color: #ffb780;
+  }
+  .disabled {
+    pointer-events: none;
+  }
+  .abled {
+    pointer-events: auto;
+  }
+  .menu_btn:hover,
+  #selected {
+    outline-color: #ffb780;
+    background-color: #ffb780;
+    color: black;
+  }
+  
+ 
+  p.inset {
+    border-style: inset;
+    padding: 20px;
+    border-color: white;
+  }
+  
+  /*inizio*/
+  .well {
+    background-color: white;
+  
+    border: none;
+    margin-top: 10px;
+    height: auto;
+    margin-left: 5px;
+    width: auto;
+    padding: 40px;
+    margin-left: 50px;
+  }
+  #my_center {
+   
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+  }
+  
+  .post_button{
+  background-color:  #ffb780;
+    width: 150px;
+    border: none;
+    color: black;
+    text-align: center;
+    font-weight:600;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline-color: #ffb780;
+    font-size: large;
+    font-family: 'Poppins';
+    border-radius: 5px;
+  
+    margin-bottom: 30px;
+
+}
+
+.post_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  outline-color: #ffb780;
+}
+
+.post_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  outline-color: #ffb780;
+  color: white;
+}
+
+.post_button:hover span {
+  padding-right: 25px;
+  outline-color: #ffb780;
+  color: white;
+ 
+}
+
+.post_button:hover span:after {
+  opacity: 1;
+  right: 0;
+  outline-color:  #ffb780;
+  color: white;
+}
+  
+  .my_a2{
+      text-decoration: none;
+      background-color: #ffb780;
+      border: none;
+      color: black;
+      text-align: center;
+      font-weight: 400;
+      padding: 5px;
+      transition: all 0.5s;
+      cursor: pointer;
+      outline-color: #ffb780;
+      font-size: large;
+      font-family: "Poppins";
+      border-radius: 5px;
+     
+     
+  
+  }
+  .my_a2:hover{
+      text-decoration: none;
+      color: white;
+      
+  }
+
+  .my_title {
+    color: #ffb780;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .my_elem {
+    color: black;
+    font-size: medium;
+    font-weight: normal;
+  }
+  
+ 
+  #center {
+    background-image: none;
+    height: auto;
+  }
+  
+  
+  #my_button2{
+    margin-left : 30px;
+    border-radius: 10px;
+    background-color:#ffb780;
+    width: 300px;
+    border: none;
+    color:black;
+    text-align: center;
+    font-weight:600;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    outline-color:#ffb780;
+    font-size: large;
+    font-family: 'Poppins';
+    margin-top: 10px;
+    padding: 15px 32px;
+    margin-bottom: 20px;
+   
+  }
+  
+  #my_button2 a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    outline-color:#ffb780;
+    color: black;
+  }
+  
+  #my_button2 a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+    outline-color: #ffb780;
+    color: white;
+  }
+  
+  #my_button2:hover a {
+    padding-right: 25px;
+    outline-color:#ffb780;
+    color: white;
+   
+  }
+  
+  
+  #my_button:hover, #my_a2:hover{
+    color: white;
+  }
+  
+  .my_button:hover,
+  #my_a2:hover {
+    color: white;
+  }
+  
+ 
+  .my_link {
+    font-family: "Poppins";
+    font-size: small;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .username{
+    font-family: "Poppins";
+    font-size: x-large;
+    text-decoration: none;
+    color: #ffb780;
+   
+    margin-right: 10px;
+
+  }
+  
+  .my_link:hover {
+      font-family: "Poppins";
+     
+      text-decoration: none;
+      color:  #ffb780;
+      cursor: pointer;
+    
+    }
+    
+    .verify-disabled{
+        font-family: "Poppins";
+        font-size: small;
+        text-decoration: none;
+        color:#9a9a9a;
+       cursor: not-allowed;
+        margin-right: 10px;
+
+    }
+    .verify-disabled span{
+        cursor: not-allowed;
+    }
+    .verify-disabled:hover{
+        color:#9a9a9a;
+        text-decoration: none;
+        cursor: not-allowed;
+    }
+
+  
+    
+    
+  
+  /*fine */
+  
+  /*sfondo*/
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {
+    height: 600px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  body {
+    position: relative;
+  }
+  #e_background {
+    background: #000 url("../Images/sky.jpg") repeat 5% 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    -webkit-animation: stars-anim 600s infinite linear;
+    -moz-animation: stars-anim 600s infinite linear;
+    -o-animation: stars-anim 600s infinite linear;
+    animation: stars-anim 600s infinite linear;
+  }
+  
+  @-webkit-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-moz-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-o-keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @keyframes stars-anim {
+    from {
+      background-position: 5% 600%;
+    }
+    to {
+      background-position: 1300% 5%;
+    }
+  }
+  @-webkit-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-moz-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @-o-keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  @keyframes light {
+    0% {
+      opacity: 0.1;
+    }
+    25% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  

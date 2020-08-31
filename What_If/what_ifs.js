@@ -7,8 +7,8 @@ var no_login = localStorage.getItem("no_login");
 
 $(document).ready(function () {
 
-  if(no_login == "true" ) $("#btn3").prop("disabled", true);
-  else $("#btn3").prop("disabled", false);
+  if(no_login == "true" ) $("#create_what_if").prop("disabled", true);
+  else $("#create_what_if").prop("disabled", false);
 
   var request = new XMLHttpRequest();
     request.open('GET', `https://calm-shore-44304.herokuapp.com/leaderboard/topics`, false);
@@ -34,8 +34,8 @@ $(document).ready(function () {
         }
     }
     request.send();
-  if(level<3) $("#btn3").prop("disabled", true);
-  else $("#btn3").prop("disabled", false);
+  if(level<3) $("#create_what_if").prop("disabled", true);
+  else $("#create_what_if").prop("disabled", false);
  path = "https://calm-shore-44304.herokuapp.com/major_element/what_if";
     
     populatePost("posts", "what_if", "all_what_ifs", path);
@@ -187,7 +187,7 @@ async function populatePost(section, mj_name, mode, path) {
             "Created what_ifs will appear here! Start creating now!";
             $("#search_btn").prop("disabled", true);
             $("#pop_btn").prop("disabled", true);
-            $("#btn3").prop("disabled", true);
+            $("#create_what_if").prop("disabled", true);
         $("#message").show();
           }
           else if(mode=="topics"){

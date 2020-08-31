@@ -3,8 +3,13 @@ var level = localStorage.getItem("level");
 var points = localStorage.getItem("points");
 var img = localStorage.getItem("avatar");
 var id = localStorage.getItem("id");
+var no_login = localStorage.getItem("no_login");
 
 $(document).ready(function () {
+  if(no_login == "true" ) $("#create_theory").prop("disabled", true);
+  else $("#create_theory").prop("disabled", false);
+
+
   var request = new XMLHttpRequest();
     request.open('GET', `https://calm-shore-44304.herokuapp.com/leaderboard/topics`, false);
     request.onload = function() {
@@ -276,8 +281,8 @@ async function populatePost(section, mj_name, mode, path) {
 
          
 
-         
-
+         //alert("No login: " + no_login)
+          if(no_login != "true"){
           var link = document.createElement("a");
           link.id = risposta[index].table.major_element.id + "upvote";
           link.name = risposta[index].table.major_element.id;
@@ -329,11 +334,6 @@ async function populatePost(section, mj_name, mode, path) {
          
           var span3 = document.createElement("span");
           span3.className = "glyphicon glyphicon-scissors";
-
-
-
-          //fine
-
           div_well.appendChild(br);
           link.appendChild(span1);
           div_well.appendChild(link);
@@ -343,6 +343,12 @@ async function populatePost(section, mj_name, mode, path) {
           div_well.appendChild(spazio2);
           link3.appendChild(span3);
           div_well.appendChild(link3);
+        }
+
+
+          //fine
+
+         
           div_col.appendChild(div_well);
 
           div_row.appendChild(div_col);

@@ -155,7 +155,7 @@ async function populatePost(section, mj_name, mode, path) {
             "Created theories will appear here! Start creating now!";
             $("#search_btn").prop("disabled", true);
             $("#pop_btn").prop("disabled", true);
-            $("#btn3").prop("disabled", true);
+            $("#create_theory").prop("disabled", true);
         $("#message").show();
           }
           else if(mode=="topics"){

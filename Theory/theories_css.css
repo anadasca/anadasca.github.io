@@ -369,7 +369,7 @@ p.inset {
   margin-left: 10px;
   float: center;
 }
-#btn3{
+#create_theory{
     float: right;
     width: 100%;
     height: auto;
@@ -393,7 +393,7 @@ p.inset {
   
   }
   
-  #btn3:disabled , #pop_btn:disabled{
+  #create_theory:disabled , #pop_btn:disabled{
     border: 2px solid  #ffb780;
     opacity: 30%;
     cursor: not-allowed;
@@ -402,14 +402,14 @@ p.inset {
     color: white
   }
   
-  #btn3:disabled span,  .my_button2:disabled span {
+  #create_theory:disabled span,  .my_button2:disabled span {
     cursor: not-allowed;
   }
-  #btn3:disabled span:after, .my_button2:disabled span:after {
+  #create_theory:disabled span:after, .my_button2:disabled span:after {
     content: "";
   }
   
-  #btn3:hover:disabled span , .my_button2:hover:disabled span{
+  #create_theory:hover:disabled span , .my_button2:hover:disabled span{
     padding-right: 0px;
   }
   

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>NTR- Questions</title>
+    <title>NTR- Theories</title>
 
     <!--Poppins font-->
     <link
@@ -19,7 +19,7 @@
     />
 
     <!-- my css file-->
-    <link rel="stylesheet" href="questions_css.css" />
+    <link rel="stylesheet" href="theories_css.css" />
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!--My script-->
-    <script src="questions.js"></script>
+    <script src="theories.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse" id="navbar">
@@ -38,63 +38,23 @@
         </div>
         <ul class="nav navbar-nav">
           <li class="menu_btn">
-            <a class="link" href="../Home/HomeLogin.html">Home</a>
-          </li>
-          <li class="menu_btn">
-            <a class="link" href="../Theory/Theories.html">Theories</a>
-          </li>
-          <li class="menu_btn">
-            <a class="link" href="../What_If/What_ifs.html">What-ifs</a>
+            <a class="link" href="../Home/Home_no_login.html">Home</a>
           </li>
           <li class="menu_btn" id="selected">
-            <a class="link" href="Questions.html">Questions</a>
+            <a class="link" href="../Theory/Theory_no_login.html">Theories</a>
           </li>
           <li class="menu_btn">
-            <a class="link" href="../Test/Tests.html">Tests</a>
+            <a class="link" href="../What_If/What_if_no_login.html">What-ifs</a>
           </li>
           <li class="menu_btn">
-            <a class="link" href="../Ranks/Ranks.html">Ranks</a>
+            <a class="link" href="../Question/Questions_no_login.html">Questions</a>
           </li>
+          <li class="menu_btn">
+            <a class="link" href="../Test/Test_no_login.html">Tests</a>
          
+          
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li >
-            <div class="dropdown">
-              <button
-                class="btn btn-default dropdown-toggle "
-                type="button"
-                id="my_button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                <span class="glyphicon glyphicon-user"></span>
-                User
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="../Profile/Profile.html" id="my_a_p">
-                    <span class="glyphicon glyphicon-home"></span>
-                    My profile
-                  </a>
-                </li>
-                <li>
-                  <a href="../Profile/Settings.html" id="my_a_s">
-                    <span class="glyphicon glyphicon-cog"></span>
-                    Settings
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onclick="logout()" id="my_a_l">
-                    <span class="glyphicon glyphicon-log-out"></span>
-                    Log-out
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+       
       </div>
     </nav>
     <div id="e_background">
@@ -112,14 +72,14 @@
               <input
                 type="text"
                 id="tag"
-                list="menu_category"
+                list="topics"
                 placeholder="Type or select a category"
               />
              
               <!-- datalist tag specifies a list of pre-defined options for tag input -->
-              <datalist id="menu_category">
-                <option value="All questions"></option>
-                <option value="Star wars"></option>
+              <datalist id="topics">
+                <option value="All theories"></option>
+                <option value="Star_wars"></option>
                 <option value="Avengers"></option>
                 <option value="Marvel"></option>
                 <option value="Disney"></option>
@@ -134,7 +94,7 @@
 
              
               <span class="input-group-btn">
-                <button class="btn btn-default" type="submit" id="search_btn">
+                <button class="btn btn-default" type="submit" id="search_btn" onclick="SearchByTag()">
                   <i class="glyphicon glyphicon-search"></i>
                 </button>
               </span>
@@ -154,8 +114,8 @@
 
             <div class="col-sm-3">
               <button type="button" class="my_button2" id="btn3" onclick="create()">
-                <a class="my_a2">
-                  Ask a new question!
+                <a  class="my_a2">
+                  Create a new theory!
                 </a>
               </button>
             </div>

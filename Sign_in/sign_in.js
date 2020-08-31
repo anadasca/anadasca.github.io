@@ -23,6 +23,7 @@ function checkForm() {
       localStorage.setItem("level", risposta.level);
 
       localStorage.setItem("id", risposta.id);
+      localStorage.setItem("no_login", "false")
 
 
       var img = risposta.avatar;

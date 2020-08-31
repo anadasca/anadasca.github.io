@@ -36,7 +36,7 @@ $(document).ready(function () {
 function report(){
 
   var mj_id = this.name;
-  alert("Name: " + name)
+ 
     var path = "https://calm-shore-44304.herokuapp.com/report/comment" ;
     var obj = {user_id : user, comment_id: mj_id};
     var data = JSON.stringify(obj);

@@ -6,6 +6,7 @@ var test_pass,
 //all'inizio il bottone è disabilitato
 $(document).ready(function () {
   $("#submit").prop("disabled", true);
+  localStorage.setItem("no_login", "false")
 });
 
 //Funzione che controlla che tutti i requisiti siano soddisfatti, se lo sono abilita il bottone di submit,

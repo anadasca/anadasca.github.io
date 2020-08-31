@@ -1,7 +1,19 @@
 var user = localStorage.getItem("id");
 var level = localStorage.getItem("level");
 var created_new = false;
+
+var no_login = localStorage.getItem("no_login");
+
 $(document).ready(function () {
+  if(no_login == "true" ) $("#btn3").prop("disabled", true);
+  else $("#btn3").prop("disabled", false);
+
+  if(no_login == "true" ) $("#btn3").prop("disabled", true);
+  else $("#btn3").prop("disabled", false);
+
+
+  if(level<3) $("#btn3").prop("disabled", true);
+  else $("#btn3").prop("disabled", false);
    
     var request = new XMLHttpRequest();
       request.open('GET', `https://calm-shore-44304.herokuapp.com/leaderboard/topics`, false);
@@ -167,7 +179,7 @@ function populatePost(section, mj_name, mode, path) {
             my_description_title.appendChild(my_content);
             div_well.appendChild(my_description_title);
   
-
+            if(no_login != "true"){
             
             var link3 = document.createElement("a");
             link3.name =  risposta[index].id;
@@ -191,7 +203,8 @@ function populatePost(section, mj_name, mode, path) {
            button.onclick = takeTest;
            button.appendChild(span);
           
-             div_well.appendChild(button)
+             div_well.appendChild(button);
+            }
            
          
   

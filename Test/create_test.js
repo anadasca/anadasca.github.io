@@ -58,7 +58,7 @@ $(document).ready(function () {
   };
  
   var data = JSON.stringify(obj);
-  alert("Data: " + data)
+ 
  
 
   var path = "https://calm-shore-44304.herokuapp.com/test/new";

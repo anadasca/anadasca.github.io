@@ -357,7 +357,7 @@ body {
     margin-left: 10px;
     float: center;
   }
-  #btn3{
+  #creat_what_if{
       float: right;
       width: 100%;
       height: auto;
@@ -381,7 +381,7 @@ body {
     
     }
     
-    #btn3:disabled , #pop_btn:disabled{
+    #create_what_if:disabled , #pop_btn:disabled{
       border: 2px solid  #ffb780;
       opacity: 30%;
       cursor: not-allowed;
@@ -390,14 +390,14 @@ body {
       color: white
     }
     
-    #btn3:disabled span,  .my_button2:disabled span {
+    #create_what_if:disabled span,  .my_button2:disabled span {
       cursor: not-allowed;
     }
-    #btn3:disabled span:after, .my_button2:disabled span:after {
+    #create_what_if:disabled span:after, .my_button2:disabled span:after {
       content: "";
     }
     
-    #btn3:hover:disabled span , .my_button2:hover:disabled span{
+    #create_what_if:hover:disabled span , .my_button2:hover:disabled span{
       padding-right: 0px;
     }
     

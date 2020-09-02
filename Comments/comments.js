@@ -294,3 +294,35 @@ function back_to() {
     window.location.href = "../What_If/What_ifs.html";
   else window.location.href = "../Question/Questions.html";
 }
+
+function verify_comment(){
+
+  var request = new XMLHttpRequest();
+  var id = this.id;
+ 
+ 
+    var obj = {
+      user_id: user,
+      comment_id: id,
+      proof: "proof"
+    };
+    var data = JSON.stringify(obj);
+    var path = "https://calm-shore-44304.herokuapp.com/verify";
+    request.open("POST", path, false);
+    request.onload = function () {
+      if (request.status >= 200 && request.status < 400) {
+        //var risposta = JSON.parse(this.response);
+        alert("Verified!");
+
+        window.location.href = "Comments.html";
+      } else {
+        alert(
+          "Something went wrong! Please try again. Error: " + this.responseText
+        );
+      }
+    };
+    request.setRequestHeader("Content-type", "text/plain");
+    request.send(data);
+  
+
+}

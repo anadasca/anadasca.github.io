@@ -112,3 +112,11 @@ function create_topic(){
 
 
 }
+
+
+function back_to(){
+  if (element == "theory") window.location.href = "../Theory/Theories.html";
+  else if (element == "question")
+    window.location.href = "../Question/Questions.html";
+  else window.location.href = "../What_If/What_ifs.html";
+}

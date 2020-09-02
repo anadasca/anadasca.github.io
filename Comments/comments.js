@@ -168,12 +168,13 @@ async function populateComments() {
           verify.className = "my_link";
           verify.onclick = verify_comment;
           var span = document.createElement("span");
-          span.className = "glyphicon glyphicon-star-empty";
+          span.className = "glyphicon glyphicon-ok";
           verify.appendChild(span);
         } else {
           verify.className = "verify-disabled";
           var span = document.createElement("span");
-          span.className = "glyphicon glyphicon-ok";
+          span.className = " glyphicon glyphicon-check";
+         
           verify.appendChild(span);
         }
 

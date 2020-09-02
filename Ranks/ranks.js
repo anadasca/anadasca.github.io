@@ -77,7 +77,7 @@ function questions_rank(){
 }
 
 function what_ifs_rank(){
-    document.getElementById("what_if").style.color = "white"
+    document.getElementById("what_if").style.color = "black"
     document.getElementById("question").style.color = " white"
     document.getElementById("user_button").style.color = " white"
     document.getElementById("theory").style.color = "white"

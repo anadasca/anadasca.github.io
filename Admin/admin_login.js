@@ -14,9 +14,9 @@ function checkForm() {
     var obj = {
       password: password
     };
-    alert("Password: " + password);
+   
     var data = JSON.stringify(obj);
-    alert("Sending")
+   
    
     request.open("POST", "https://calm-shore-44304.herokuapp.com/admin", false);
     request.onload = function () {

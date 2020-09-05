@@ -56,19 +56,13 @@ $(document).ready(function () {
       document.getElementById("my_what_ifs").style.color = "rgb(153,153,153)";
     }
 
-    if (level < 3) {
-      document.getElementById("my_tests").className = "disabled";
-      document.getElementById("my_tests").style.color = "#d1d1d1";
-    } else {
-      document.getElementById("my_tests").className = "abled";
-      document.getElementById("my_tests").style.color = "rgb(153,153,153)";
-    }
+   
   }
 
   var first_theory = true;
   var first_what_if = true;
   var first_question = true;
-  var first_test = true;
+  
   var first_l_theory = true;
   var first_l_what_if = true;
   var first_l_question = true;
@@ -121,7 +115,7 @@ $(document).ready(function () {
   function findTheories() {
     $("#questions_section").hide();
     $("#what_ifs_section").hide();
-    $("#tests_section").hide();
+  
     $("#l_theories_section").hide();
     $("#l_questions_section").hide();
     $("#l_what_ifs_section").hide();
@@ -141,7 +135,7 @@ $(document).ready(function () {
   function findWhatIfs() {
     $("#theories_section").hide();
     $("#questions_section").hide();
-    $("#tests_section").hide();
+    
     $("#l_theories_section").hide();
     $("#l_questions_section").hide();
 
@@ -155,13 +149,13 @@ $(document).ready(function () {
     } else {
       first_what_if = false;
      
-      populatePost("what_ifs_section", "what-if", "created");
+      populatePost("what_ifs_section", "what_if", "created");
     }
   }
   function findQuestions() {
     $("#theories_section").hide();
     $("#what_ifs_section").hide();
-    $("#tests_section").hide();
+   
     $("#l_theories_section").hide();
     $("#l_what_ifs_section").hide();
 
@@ -178,30 +172,13 @@ $(document).ready(function () {
       populatePost("questions_section", "question", "created");
     }
   }
-  function findTests() {
-    $("#theories_section").hide();
-    $("#what_ifs_section").hide();
-    $("#questions_section").hide();
-    $("#l_theories_section").hide();
-    $("#l_what_ifs_section").hide();
-    $("#l_questions_section").hide();
-
-    $("#tests_section").show();
-    if (!first_test) {
-      $("#message").hide();
-      return;
-    } else {
-      first_test = false;
-      
-      //codice per test;
-    }
-  }
+  
 
   //liked
   function findLikedTheories() {
     $("#questions_section").hide();
     $("#what_ifs_section").hide();
-    $("#tests_section").hide();
+   
     $("#theories_section").hide();
     $("#l_questions_section").hide();
     $("#l_what_ifs_section").hide();
@@ -221,7 +198,7 @@ $(document).ready(function () {
   function findLikedWhatIfs() {
     $("#theories_section").hide();
     $("#questions_section").hide();
-    $("#tests_section").hide();
+   
     $("#l_theories_section").hide();
     $("#l_questions_section").hide();
 
@@ -235,13 +212,13 @@ $(document).ready(function () {
     } else {
       first_l_what_if = false;
      
-      populatePost("l_what_ifs_section", "what-if", "upvoted");
+      populatePost("l_what_ifs_section", "what_if", "upvoted");
     }
   }
   function findLikedQuestions() {
     $("#theories_section").hide();
     $("#what_ifs_section").hide();
-    $("#tests_section").hide();
+   
     $("#l_theories_section").hide();
     $("#l_what_ifs_section").hide();
 
@@ -281,22 +258,13 @@ $(document).ready(function () {
     document.getElementById("my_what_ifs").style.color = "#ffb780";
     document.getElementById("my_theories").style.color = "rgb(153, 153, 153)";
     document.getElementById("my_questions").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_tests").style.color = "rgb(153, 153, 153)";
+   
     document.getElementById("my_l_what_ifs").style.color = "rgb(153, 153, 153)";
     document.getElementById("my_l_theories").style.color = "rgb(153, 153, 153)";
     findWhatIfs();
   });
 
-  $("#my_tests").click(function () {
-    document.getElementById("my_tests").style.color = "#ffb780";
-    document.getElementById("my_theories").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_what_ifs").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_questions").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_l_theories").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_l_what_ifs").style.color = "rgb(153, 153, 153)";
-    findTests();
-  });
-
+ 
   $("#my_l_theories").click(function () {
     document.getElementById("my_l_theories").style.color = "#ffb780";
     document.getElementById("my_l_questions").style.color =
@@ -329,7 +297,7 @@ $(document).ready(function () {
     document.getElementById("my_what_ifs").style.color = "rgb(153, 153, 153)";
     document.getElementById("my_theories").style.color = "rgb(153, 153, 153)";
     document.getElementById("my_questions").style.color = "rgb(153, 153, 153)";
-    document.getElementById("my_tests").style.color = "rgb(153, 153, 153)";
+   
     checkLevel();
     findLikedWhatIfs();
   });
@@ -466,6 +434,7 @@ async function populatePost(section, mj_name, mode) {
       //alert("Risposta: " + risposta_str);
 
       if (risposta.length == 0) {
+      
         if (mode == "created") {
           if (mj_name == "theory")
             document.getElementById("message").innerHTML =
@@ -473,7 +442,7 @@ async function populatePost(section, mj_name, mode) {
           else if (mj_name == "question")
             document.getElementById("message").innerHTML =
               "Your questions will appear here! Start asking now!";
-          else if (mj_name == "what-if")
+          else if (mj_name == "what_if")
             document.getElementById("message").innerHTML =
               "Your what-ifs will appear here! Start suggesting some now!";
         } else {
@@ -483,7 +452,7 @@ async function populatePost(section, mj_name, mode) {
           else if (mj_name == "question")
             document.getElementById("message").innerHTML =
               "Your liked questions will appear here! Start browsing some now!";
-          else if (mj_name == "what-if")
+          else if (mj_name == "what_if")
             document.getElementById("message").innerHTML =
               "Your liked what-ifs will appear here! Start browsing some now!";
         }

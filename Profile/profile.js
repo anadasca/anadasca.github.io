@@ -155,7 +155,7 @@ $(document).ready(function () {
     } else {
       first_what_if = false;
      
-      populatePost("what_ifs_section", "what-if", "created");
+      populatePost("what_ifs_section", "what_if", "created");
     }
   }
   function findQuestions() {
@@ -235,7 +235,7 @@ $(document).ready(function () {
     } else {
       first_l_what_if = false;
      
-      populatePost("l_what_ifs_section", "what-if", "upvoted");
+      populatePost("l_what_ifs_section", "what_if", "upvoted");
     }
   }
   function findLikedQuestions() {
@@ -466,6 +466,7 @@ async function populatePost(section, mj_name, mode) {
       //alert("Risposta: " + risposta_str);
 
       if (risposta.length == 0) {
+      
         if (mode == "created") {
           if (mj_name == "theory")
             document.getElementById("message").innerHTML =
@@ -473,7 +474,7 @@ async function populatePost(section, mj_name, mode) {
           else if (mj_name == "question")
             document.getElementById("message").innerHTML =
               "Your questions will appear here! Start asking now!";
-          else if (mj_name == "what-if")
+          else if (mj_name == "what_if")
             document.getElementById("message").innerHTML =
               "Your what-ifs will appear here! Start suggesting some now!";
         } else {
@@ -483,7 +484,7 @@ async function populatePost(section, mj_name, mode) {
           else if (mj_name == "question")
             document.getElementById("message").innerHTML =
               "Your liked questions will appear here! Start browsing some now!";
-          else if (mj_name == "what-if")
+          else if (mj_name == "what_if")
             document.getElementById("message").innerHTML =
               "Your liked what-ifs will appear here! Start browsing some now!";
         }
